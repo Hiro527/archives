@@ -17,4 +17,4 @@ client.once('ready', async () => {
     process.exit(0);
 });
 
-client.login('ODM3OTMzODEzMTQ5MjA0NDgw.YIzwrQ.rH2i0_95s_hhFnWyXvFaSoY8-j0');
+client.login('DISCORD_TOKEN');
