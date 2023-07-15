@@ -1,0 +1,34 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "デバッグ(本番アカウント)",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "preLaunchTask": "npm: build",
+            "program": "${workspaceFolder}\\build\\index.js",
+            "env": {
+                "NODE_CONFIG_TS_ENV": ""
+            }
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "デバッグ(開発アカウント)",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "preLaunchTask": "npm: build",
+            "program": "${workspaceFolder}\\build\\index.js",
+            "env": {
+                "NODE_CONFIG_TS_ENV": "dev"
+            }
+        }
+    ]
+}

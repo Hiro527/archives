@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ゆいちゃん - WebGUI</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    ゆいちゃん - WebGUI
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse show" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="modeSelector" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                新規作成
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="modeSelector">
+                                <li><a id="notifyBtn" class="dropdown-item">お知らせ</a></li>
+                                <li><a id="createNewBtn" class="dropdown-item">アップデート情報</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a id="editBtn" class="nav-link">投稿の編集</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="formHolder">
+            <h1 class="modeTitle">アップデート情報を送信</h1>
+            <hr>
+            <div class="itemContainer  col-sm-8 col-xl-5">
+                <label for="version" class="form-label">バージョン</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="input-group-left-example">v</span>
+                    <input type="text" id="version" class="form-control" placeholder="x.y.x" aria-label="x.y.x" aria-describedby="input-group-left">
+                </div>
+                <div style="height: 10px;"></div>
+                <label for="date" class="form-label">日付</label>
+                <div class="input-group">
+                    <input type="text" id="date" class="form-control" placeholder="2021/01/01" aria-label="2021/01/01" aria-describedby="input-group-button-right">
+                    <button type="button" class="btn btn-outline-secondary" id="input-group-button-right" onclick="dateFill();">自動入力</button>
+                </div>
+                <div style="height: 10px;"></div>
+                <label for="text" class="form-label">投稿内容</label>
+                <div class="input-group">
+                    <textarea id="text" class="form-control" placeholder="Markdown記法が使えます" style="height: 300px"></textarea>
+                </div>
+                <div style="height: 10px;"></div>
+                <div class="input-group">
+                    <span class="input-group-text" id="input-group-left-example">UUID</span>
+                    <input type="text" id="uuid" class="form-control" placeholder="自動で入力されます" aria-label="自動で入力されます" aria-describedby="input-group-left" disabled>
+                </div>
+                <div style="height: 10px;"></div>
+                <div class="input-group">
+                    <button type="button" class="btn btn-outline-primary ms-auto" onclick="sendData();">送信</button>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="./index.js"></script>
+    </body>
+    <!--
+        ソースコードを読んでいるそこのあなた！さては暇でしょう？！？！
+        こんなとこ読んでないでKrunkerやりなさい！怒るわよ！
+        https://krunker.io/
+        え？Krunkerに飽きた？じゃあDLSiteをおすすめするよ！
+        https://dlsite.com
+    -->
+</html>

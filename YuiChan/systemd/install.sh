@@ -1,0 +1,1 @@
+sudo cp yuichan.service /etc/systemd/system/yuichan.service

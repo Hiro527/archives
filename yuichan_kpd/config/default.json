@@ -1,0 +1,9 @@
+{
+    "token": "DISCORD_TOKEN",
+    "prefix": "y.",
+    "guildId": "477748107782914058",
+    "reportChannelId": "806091748593106974",
+    "logChannelId": "935123068538486784",
+    "kpdRoleId": "801742253944864838",
+    "reportCommand": "report"
+}

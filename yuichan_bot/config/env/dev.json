@@ -1,0 +1,9 @@
+{
+    "token": "DISCORD_TOKEN",
+    "prefix": "y!",
+    "guildId": "855096622303674378",
+    "notifyCh": "975223239422910484",
+    "updateCh": "975223303931326484",
+    "logCh": "975253134324695080",
+    "release": "d"
+}

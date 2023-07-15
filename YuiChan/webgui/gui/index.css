@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
+* {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 400;
+}
+
+.modeTitle {
+    font-weight: 800;
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+}
+
+.itemContainer {
+    text-align: center;
+    margin: 0 auto;
+}
+
+hr {
+	border-top: 1px dotted #8c8b8b;
+	border-bottom: 1px dotted #fff;
+}
+
+/*
+こんなところ読んでるとか暇人ですか～？ざ～こ♡ざ～こ♡(メスガキボイス)
+*/

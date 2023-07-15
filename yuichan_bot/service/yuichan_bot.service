@@ -1,0 +1,10 @@
+[Unit]
+Description=ゆいちゃん TTSハンドラ
+
+[Service]
+Type=simple
+ExecStart=/etc/yuichan/yuichan_bot/start.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

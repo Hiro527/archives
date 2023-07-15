@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
+
+body {
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+#title {
+    font-weight: 600;
+}
+
+#loadingUI {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#loadingUI #loadingText {
+    margin-top: 5px;
+}
+
+#appUI {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#appUI h1 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.appElements {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#postDesc {
+    height: 300px;
+}

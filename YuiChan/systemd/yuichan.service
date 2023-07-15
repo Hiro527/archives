@@ -1,0 +1,10 @@
+[Unit]
+Description=KrunkerJapan Discord Bot
+
+[Service]
+Type=simple
+ExecStart=/home/hiro/YuiChan/start.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
