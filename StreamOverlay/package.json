@@ -1,0 +1,22 @@
+{
+  "name": "streamoverlay",
+  "version": "1.0.0",
+  "description": "オーバーレイ用プログラム",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrunkerJapan/StreamOverlay.git"
+  },
+  "author": "Hiro527",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KrunkerJapan/StreamOverlay/issues"
+  },
+  "homepage": "https://github.com/KrunkerJapan/StreamOverlay#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

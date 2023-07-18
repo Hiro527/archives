@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>toshino-se cup #3</title>
+        <script src="./index.js"></script>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body id="bodyEl">
+        <div id="logo">
+            <img src="../img/toshino-se_cup.png">
+        </div>
+        <div id="prevResult">
+            <div id="title">Match Result</div>
+            <hr id="bar">
+            <div id="winner" class="resultElements">
+                <div id="winnerName" class="teamNameText teamName">Winner</div>
+            </div>
+            <div id="versus" class="resultElements">vs</div>
+            <div id="loser" class="resultElements">
+                <div id="loserName" class="teamNameText teamName">Loser</div>
+            </div>
+            <div id="win">Win!</div>
+            <div id="lose">Lose...</div>
+            <div id="pointsHolder">
+                <div id="winnerPts" class="Points">
+                    2
+                </div>
+                <div id="minus">ー</div>
+                <div id="loserPts" class="Points">
+                    1
+                </div>
+            </div>
+        </div>
+        <div id="bracketHolder">
+            <iframe id="bracket" src="https://challonge.com/ja/kr_tsc3/module" width="1300px" height="600px" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+        </div>
+        <div id="nextGameHolder">
+            <div id="gameInfo">
+                <div id="next">Next Game</div>
+                <div id="teamVS">
+                    <span id="nextTeam1">Team1</span> <span id="vs">vs</span> <span id="nextTeam2">Team2</span>
+                </div>
+            </div>
+            <div id="timerSeparator"></div>
+            <div id="timer">00:00</div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+        <script>
+        VANTA.DOTS({
+            el: "#bodyEl",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            minHeight: 1080.00,
+            minWidth: 1920.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xffb400,
+            color2: 0xffb400,
+            spacing: 40.00
+        })
+        </script>
+    </body>
+</html>

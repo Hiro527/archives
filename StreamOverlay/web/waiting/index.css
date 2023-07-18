@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 源ノ角ゴシック;
+    src: url('../fonts/SourceHanSansJP-Heavy.otf');
+}
+
+@font-face {
+    font-family: GameFont;
+    src: url('../fonts/font2.ttf');
+}
+
+* {
+    font-family: 源ノ角ゴシック;
+    font-size: 40px;
+    user-select: none;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: unset;
+}
+
+#logo {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 600px;
+}
+
+#logo img {
+    width: 500px;
+}
+
+#bar {
+	position: relative;
+	height: 3px;
+	border-width: 0;
+	background-image: -webkit-linear-gradient(left,
+	transparent 0%,#111111 50%,transparent 100%);
+	background-image:         linear-gradient(90deg,
+	transparent 0%,#111111 50%,transparent 100%);
+}
+
+#prevResult {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    border: #ffb400 solid 3px;
+    width: 1300px;
+    height: 500px;
+    background-color: rgba(214, 214, 214, 0.2);
+    box-shadow: 0 0 20px #000000;
+}
+
+.resultElements {
+    position: absolute;
+}
+
+#title {
+    font-family: GameFont;
+    font-size: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+#versus {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 65px;
+}
+
+#winner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    top: 18.5%;
+    left: 80px;
+    height: 300px;
+    text-shadow: 0 0 15px #f7e1ae;
+}
+
+#loser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    top: 18.5%;
+    right: 80px;
+    height: 300px;
+}
+
+.teamName {
+    font-size: 80px;
+    vertical-align: middle;
+    line-height: 75px;
+    width: 500px;
+}
+
+#pointsHolder {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.Points {
+    width: 100px;
+    font-size: 70px;
+    margin: 20px;
+}
+
+#minus {
+    font-size: 60px;
+}
+
+#winnerPts {
+    text-align: right;
+    font-size: 90px;
+    text-shadow: 0 0 15px #f7e1ae;
+}
+
+#loserPts {
+    text-align: left;
+}
+
+#win {
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    top: 70%;
+    left: 10%;
+    font-size: 70px;
+    font-family: GameFont;
+    color: #f7e1ae;
+    text-shadow: 0 0 15px #f7e1ae;
+}
+
+#lose {
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    top: 70%;
+    right: 10%;
+    font-size: 70px;
+    font-family: GameFont;
+    color: #0003cf;
+}
+
+#nextGameHolder {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#gameInfo {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    margin-bottom: -15px;
+}
+
+#next {
+    font-family: GameFont;
+    font-size: 20px;
+    line-height: 0px;
+}
+
+#timerSeparator {
+    width: 5px;
+    height: 75px;
+    background-color: #ffffff6e;
+    margin: 20px;
+}
+
+#timer {
+    font-family: GameFont;
+    font-size: 50px;
+    text-shadow: 0 0 10px #000;
+    color: #ffffff;
+    width: 170px;
+    text-align: center;
+}
+
+#teamVS {
+    font-size: 50px;
+}
+
+#vs {
+    font-size: 30px;
+}
+
+#bracketHolder {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    width: 1300px;
+    height: 500px;
+    border: #ffb400 solid 3px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #000000;
+}
